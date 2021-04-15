@@ -27,5 +27,5 @@ if (!isset($_SESSION['loggedin'])) {
 			<h2>Home Page</h2>
 			<p>Welkom terug, <?=$_SESSION['name']?>!</p>
 		</div>
-	</body>
+</body>
 </html>

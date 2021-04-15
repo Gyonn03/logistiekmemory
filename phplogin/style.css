@@ -6,7 +6,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    background-color: #435165;
+    background-image: url(background_login.png);
 }
 .login {
     width: 400px;
@@ -33,7 +33,7 @@ body {
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #3274d6;
+    background-color: #5b6574;
     color: #ffffff;
 }
 .login form input[type="password"], .login form input[type="text"] {
@@ -47,7 +47,7 @@ body {
     width: 100%;
     padding: 15px;
    margin-top: 20px;
-    background-color: #3274d6;
+    background-color: #5b6574;
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -55,7 +55,7 @@ body {
     transition: background-color 0.2s;
 }
 .login form input[type="submit"]:hover {
-  background-color: #2868c7;
+  background-color: #343941;
     transition: background-color 0.2s;
 }
 .navtop {
@@ -106,13 +106,14 @@ body.loggedin {
 	padding: 25px 0;
 	font-size: 22px;
 	border-bottom: 1px solid #e0e0e3;
-	color: #4a536e;
+	color: #fff
 }
 .content > p, .content > div {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 	margin: 25px 0;
-	padding: 25px;
+	padding: 20px;
 	background-color: #fff;
+    width: 94%;
 }
 .content > p table td, .content > div table td {
 	padding: 5px;
@@ -125,4 +126,12 @@ body.loggedin {
 .content > div p {
 	padding: 5px;
 	margin: 0 0 10px 0;
+}
+.blockContainer{
+    padding-top:        3%;
+    padding-left:       1%;
+    width:              80%;
+    margin-left:        9%;
+    margin-right:       0%;
+    background-color:   grey
 }
