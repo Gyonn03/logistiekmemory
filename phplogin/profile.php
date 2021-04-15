@@ -42,14 +42,14 @@ $stmt->close();
 		<div class="content">
 			<h2>Profile Page</h2>
 			<div>
-				<p>Your account details are below:</p>
+				<p>Uw account informatie:</p>
 				<table>
 					<tr>
-						<td>Username:</td>
+						<td>Gebruikersnaam:</td>
 						<td><?=$_SESSION['name']?></td>
 					</tr>
 					<tr>
-						<td>Password:</td>
+						<td>Wachtwoord:</td>
 						<td><?=$password?></td>
 					</tr>
 					<tr>
@@ -58,6 +58,5 @@ $stmt->close();
 					</tr>
 				</table>
 			</div>
-		</div>
 	</body>
 </html>
