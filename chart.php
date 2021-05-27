@@ -14,6 +14,11 @@ else {
 
   
 ?>
+<html>
+<head>
+<link href="phplogin/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 <h1>Bar grafiek met de hoogste score</h1>
 <table border="0" width="100%" cellpadding = "0" cellspacing="0">
 <tr>Modus</tr>
@@ -212,8 +217,9 @@ else {
   <td align="right">Tijd over -->
           </td>
 </table>
-
+</body>
+</html>
 <?php
 $temp = 89 / 300 * 276;
 echo($temp);
-?>
+?>  
