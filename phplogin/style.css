@@ -136,86 +136,103 @@ body.loggedin {
     background-color:   grey
 }
 
-/*======================= Button =========================*/
+/*======================= Button naar chart =========================*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-
-/* General Buttons */
-button {
-  width: 130px;
-  height: 40px;
-  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
-  border: none;
-  border-radius: 5px;
+.chartbutton {
+  background-color: blue;
+  
+  color: white;
+  padding: 1em 1.5em;
   position: relative;
-  border-bottom: 4px solid #2b8bc6;
-  color: #fbfbfb;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
-  font-size: 15px;
-  text-align: left;
-  text-indent: 5px;
-  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: #0624ce;
   cursor: pointer;
 }
-button:active {
-  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
-  top: 1px;
+
+a:active {
+  box-shadow: none;
+  top: 5px;
 }
 
-button:after {
-  content: "";
-  width: 0;
-  height: 0;
-  display: block;
-  border-top: 20px solid #187dbc;
-  border-bottom: 20px solid #187dbc;
-  border-left: 16px solid transparent;
-  border-right: 20px solid #187dbc;
-  position: absolute;
-  opacity: 0.6; 
-  right: 0;
-  top: 0;
-  border-radius: 0 5px 5px 0;  
+/* signup styling */
+.bodysignup {
+	color: #fff;
+	background-image: url(background_login.png);
+	font-family: 'Roboto', sans-serif;
 }
-
-/* Button pointing left */
-
-button.back {
-  text-align: right;
-  padding-right: 12px;
-  box-sizing: border-box;
+.form-control {
+	height: 41px;
+	background: #f2f2f2;
+	box-shadow: none !important;
+	border: none;
 }
-button.back:after {
-  content: "";
-  width: 0;
-  height: 0;
-  display: block;
-  border-top: 20px solid #187dbc;
-  border-bottom: 20px solid #187dbc;
-  border-right: 16px solid transparent;
-  border-left: 20px solid #187dbc;
-  position: absolute;
-  opacity: 0.6; 
-  left: 0;
-  top: 0;
-  border-radius: 5px 0 0 5px;    
+.form-control:focus {
+	background: #e2e2e2;
 }
-
-/* Single buttons */
-
-button.site {
-  width: 40px;
-  text-align: center;
-  text-indent: 0;
+.form-control, .btn {        
+	border-radius: 3px;
 }
-button.site:after{
-  display: none;
+.signup-form {
+	width: 400px;
+	margin: 30px auto;
 }
-h1 {
-  font: 400 16px 'Open Sans';
-  text-transform: uppercase;
-  color: #999;
-  text-shadow: 1px 1px 1px #fff;
-  margin-bottom: 30px;
-} 
+.signup-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form h2  {
+	color: #333;
+	font-weight: bold;
+	margin-top: 0;
+}
+.signup-form hr  {
+	margin: 0 -30px 20px;
+}    
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	min-width: 140px;
+}
+.signup-form .btn:hover, .signup-form .btn:focus {
+	background: #2389cd !important;
+	outline: none;
+}
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #3598dc;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}
+.signup-form .hint-text  {
+	padding-bottom: 15px;
+	text-align: center;
+}
