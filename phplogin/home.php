@@ -30,6 +30,6 @@ if (!isset($_SESSION['loggedin'])) {
 	
 		<div class="content">
 		<a href="../chart.php" class="chartbutton" >Resultaten</a>
-        </div>
+</div>
 </body>
 </html>

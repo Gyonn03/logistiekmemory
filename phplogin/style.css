@@ -138,14 +138,14 @@ body.loggedin {
 
 /*======================= Button naar chart =========================*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-.chartbutton {
+.chartbutton  {
   background-color: blue;
-  
   color: white;
   padding: 1em 1.5em;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+  
 }
 
 a:hover {
@@ -235,4 +235,17 @@ a:active {
 .signup-form .hint-text  {
 	padding-bottom: 15px;
 	text-align: center;
+}
+
+/* ========== Styling chart.php ======== */
+.chartcontent {
+	margin: 25px 0;
+	padding: 50px;
+	background-color: #fff;
+    width: 100%;
+	display: inline-block;
+}
+.backbutton {
+	display: inline-block;
+	text-align:center;display:block;
 }
