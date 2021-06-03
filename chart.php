@@ -29,8 +29,10 @@ else {
       <table border = "0" width = "100%" cellpadding = "1" cellspacing="1">
 
         <tr>
-          <td align="left" bgcolor="yellow" width=<?php
-          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Geel' ORDER BY Tijd DESC
+          <td align="left" bgcolor="yellow" width=
+          
+          <?php
+          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Geel' ORDER BY Tijd ASC
           LIMIT 1";
           if ($result = $con->query($sql)) {
             if ($result->num_rows > 0) {
@@ -43,12 +45,14 @@ else {
           }
           
           
-          ?>> 
+          ?>
+          
+          > 
           </td>
           <td align="left">
           
           <?php
-          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Geel' ORDER BY Tijd DESC
+          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Geel' ORDER BY Tijd ASC
           LIMIT 1";
           if ($result = $con->query($sql)) {
             if ($result->num_rows > 0) {
@@ -78,7 +82,7 @@ else {
       <table border = "0" width = "100%" cellpadding = "1" cellspacing="1">
         <tr>
           <td align="left" bgcolor="green" width=<?php
-          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Groen' ORDER BY Tijd DESC
+          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Groen' ORDER BY Tijd ASC
           LIMIT 1";
           if ($result = $con->query($sql)) {
             if ($result->num_rows > 0) {
@@ -96,7 +100,7 @@ else {
           <td align="left">
           
           <?php
-          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Groen' ORDER BY Tijd DESC
+          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Groen' ORDER BY Tijd ASC
           LIMIT 1";
           if ($result = $con->query($sql)) {
             if ($result->num_rows > 0) {
@@ -145,7 +149,7 @@ else {
           <td align="left">
           
           <?php
-          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Rood' ORDER BY Tijd DESC
+          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Rood' ORDER BY Tijd ASC
           LIMIT 1";
           if ($result = $con->query($sql)) {
             if ($result->num_rows > 0) {
@@ -176,7 +180,7 @@ else {
         <tr>
         
           <td align="left" bgcolor="blue" width=<?php
-          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Blauw' ORDER BY Tijd DESC
+          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Blauw' ORDER BY Tijd ASC
           LIMIT 1";
           if ($result = $con->query($sql)) {
             if ($result->num_rows > 0) {
@@ -194,7 +198,7 @@ else {
           <td align="left">
           
           <?php
-          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Blauw' ORDER BY Tijd DESC
+          $sql = "SELECT Tijd  FROM tb_data WHERE modus = 'Blauw' ORDER BY Tijd ASC
           LIMIT 1";
           if ($result = $con->query($sql)) {
             if ($result->num_rows > 0) {
@@ -209,7 +213,6 @@ else {
           
           
           ?>
-          
           </td>
         </tr>
       </table>
@@ -217,10 +220,20 @@ else {
   </tr>
   <td align="right">Tijd over -->
           </td>
+    
+  
 </table>
+
+
 </body>
+
+<h2>Overige score</h2>
+
+
+
 </html>
 <?php
 $temp = 89 / 300 * 276;
 echo($temp);
 ?>  
+
