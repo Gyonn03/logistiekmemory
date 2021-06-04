@@ -18,9 +18,20 @@ else {
 <head>
 <link href="phplogin/style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+<title>Bar-Grafiek</title>
 </head>
-<body>
-<h1>Bar grafiek met de hoogste score</h1>
+<body class="loggedin">
+		<nav class="navtop">
+			<div>
+				<h1>Logistiek Memory</h1>
+				<a href="phplogin/profile.php"><i class="fas fa-user-circle"></i>Profiel</a>
+				<a href="phplogin/logout.php"><i class="fas fa-sign-out-alt"></i>Log uit</a>
+			</div>
+		</nav>
+<div class="content">
+			<h2>Bar grafiek met de hoogste score</h2>
+		</div>
+<div class="chartcontent">
 <table border="0" width="100%" cellpadding = "0" cellspacing="0">
 <tr>Modus</tr>
   <tr>
@@ -218,9 +229,14 @@ else {
   <td align="right">Tijd over -->
           </td>
 </table>
+
 </body>
 </html>
 <?php
 $temp = 89 / 300 * 276;
 echo($temp);
 ?>  
+</div>
+<div class="backbutton">
+		<a href="phplogin/home.php" class="chartbutton" >Home</a>
+        </div>
