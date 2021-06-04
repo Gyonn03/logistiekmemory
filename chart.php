@@ -38,7 +38,7 @@ else {
 <body>
 <h1>Bar grafiek met de beste tijd</h1>
 <table border="0" width="100%" cellpadding = "0" cellspacing="0">
-<tr>Modus</tr>
+
   <tr>
     <td width="20%">Geel Beste Tijd</td> 
     <td width="75%">
@@ -243,7 +243,6 @@ else {
 
 <h1>Bar grafiek met de minste fouten</h1>
 <table border="0" width="100%" cellpadding = "0" cellspacing="0">
-<tr>Modus</tr>
   <tr>
     <td width="20%">Geel Minste Fouten</td> 
     <td width="75%">
@@ -443,13 +442,7 @@ else {
     
   
 </table>
-
-</body>
-</html>
-<?php
-$temp = 89 / 300 * 276;
-echo($temp);
-?>  
+</body>   
 </div>
 <div class="backbutton">
 		<a href="phplogin/home.php" class="chartbutton" >Home</a>
