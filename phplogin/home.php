@@ -1,12 +1,4 @@
-<?php
-// We need to use sessions, so you should always start sessions using the below code.
-session_start();
-// If the user is not logged in redirect to the login page...
-if (!isset($_SESSION['loggedin'])) {
-	header('Location: index.html');
-	exit;
-}
-?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -25,7 +17,7 @@ if (!isset($_SESSION['loggedin'])) {
 		</nav>
 		<div class="content">
 			<h2>Home Pagina</h2>
-			<p>Welkom terug, <?=$_SESSION['name']?>!</p>
+			<p>Welkom terug!</p>
 		</div>
 	
 		<div class="content">
